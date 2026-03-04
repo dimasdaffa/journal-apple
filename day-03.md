@@ -24,4 +24,4 @@ Hari ini terasa sangat deep. Saya menyadari bahwa setiap kesulitan yang kita had
 
 Proses mengulang latihan, menghadapi kegagalan kecil, dan mencoba lagi adalah cara kita membangun mentalitas untuk tidak mudah menyerah. Diskusi hari ini menyadarkan saya bahwa saya tidak sendirian dalam berproses. Menemukan kemiripan cara belajar dengan yang lainnya membuat saya lebih percaya diri untuk menghadapi tantangan ke depan.
 
-![alt text](IMG_0072.jpeg)
+![alt text](IMG_0072.jpg)
