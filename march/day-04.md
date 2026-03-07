@@ -42,6 +42,6 @@ Hari ini saya belajar bahwa hambatan terbesar dalam berkomunikasi adalah pikiran
 - 🏅 **The Visionary:** Karena kamu sudah menetapkan komitmen 9 bulan ke depan melalui *Fuel Postcard*.
 
 ---
-![alt text](IMG_0150 (1).jpeg)
-![alt text](IMG_0154 (1).jpeg)
-![alt text](IMG_9478 (1).jpeg)
+![alt text](image/IMG_0150 (1).jpeg)
+![alt text](image/IMG_0154 (1).jpeg)
+![alt text](image/IMG_9478 (1).jpeg)
