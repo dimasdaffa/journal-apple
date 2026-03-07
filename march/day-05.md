@@ -28,15 +28,5 @@ Saya telah menetapkan beberapa target utama untuk satu bulan ke depan:
 Hari ini menandai berakhirnya masa *Prelude*. Sesi *Townhall* tadi memberikan gambaran bahwa Academy adalah ruang aman untuk bertanya dan bereksplorasi. Berbagi komitmen dengan tim dan mentor membuat saya merasa memiliki tanggung jawab lebih untuk tumbuh. Menulis kartu pos untuk diri saya di bulan Desember nanti menjadi pengingat bahwa perjalanan ini adalah tentang konsistensi. Saya siap melangkah dari seorang pengamat menjadi seorang "Crew" yang aktif berkontribusi.
 
 ---
-
-## My Personal Pins (Week 1 Recap)
-
-Sebagai penutup minggu pertama, kamu bisa menambahkan ini di akhir dokumen:
-
-- 🏆 **SMART Planner:** Berhasil menyusun target yang terukur.
-- 🏆 **Open-Minded Learner:** Berkomitmen pada riset dan perspektif luar.
-- 🏆 **Future Self Connector:** Menyelesaikan pesan untuk diri sendiri di masa depan.
-
----
 ![alt text](image/IMG_0592.jpeg)
 ![alt text](image/IMG_0171.jpeg)
