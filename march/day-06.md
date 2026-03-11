@@ -1,4 +1,4 @@
-# Day 06: Challenge 0 - Hacking Thamrin Nine
+# Day 06: Refined Challenge Statement (Day 1 of Challenge 0 - Hacking Thamrin Nine)
 
 **Date:** Monday, March 9, 2026
 
