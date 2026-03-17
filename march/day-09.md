@@ -1,4 +1,4 @@
-# Day 09: Wrapping Up Synthesis & Act on Your Response Challenge
+# Day 09: Wrapping Up Synthesis & Act on Your Response Challenge (Day 4 of Challenge 0 - Hacking Thamrin Nine)
 
 **Date:** Thursday, March 12, 2026
 

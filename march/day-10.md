@@ -1,4 +1,4 @@
-# Day 10: Studio Time
+# Day 10: Studio Time (Day 5 of Challenge 0 - Hacking Thamrin Nine)
 
 **Date:** Friday, March 13, 2026
 
