@@ -1,4 +1,4 @@
-## # Day 14: Team Forming (Day 1 of Challenge 1 - Back to Basics)
+## # Day 14: Big Idea, Essential Question, Challenge Statement (Day 1 of Challenge 1 - Back to Basics)
 **Date:** Monday, March 30, 2026
 
 ### # Activities
