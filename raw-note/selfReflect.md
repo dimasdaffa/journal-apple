@@ -1,0 +1,5 @@
+Menyadari kekurangan diri. Acknowledging one's shortcomings
+
+Ternyata saya sekarang menyadari kebiasaan dari dulu itu saya out of nowhere badang pusing terasa seperti kesemutan di kepala dan pusing. Itu terjadi kalau saya memikirkan hal yg menurut saya komplet dan akan berimpact ke saya kedepannya.
+Dulu seperti kalau udah capek tiba tiba merasakan seperti ini ternyata bukan karena telat makan(karena saya saat itu juga makan teratur tetapi tetap saja mengalami perasaan ini)
+Dan pada saat persiapan maju pub speak juga. ada juga karena sehabis menyampaikan pendapat yg penting sekali sudah saya pikirkan matang dan gong sekali pada saat saya ungkapkan ke lainnya. kaya saya mikirin hal ini karena penting dan bakal berimpact gitu kedipannya. Contoh case pubspeak di depan umum, saya berusaha untuk menjelaskan agar audience memahami sudut pandang saya karena kalau saya gagal untuk itu akan berimpact terkait impresi orang terhadap saya.  sampai sekarang saya bingung cara mengatasi itu karena habit rasa tersebut rutin terjadi sih

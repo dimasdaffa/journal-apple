@@ -1,0 +1,4 @@
+Apa yg didapat dari Apple Academy
+
+Untuk beberapa bulan pertama ini justru yg saya dapat bukan techincal nya sih, malah seperti pelajaran hidup.
+Seperti dari thor yg reflection setiap hari, saya mencoba reflection tsb mencatat apa yg saya dapat dari academy di hari tsb. Jadi saya refleksi diri saya apa yg didapat stlh belajar di academy. juga saya mendapat suatu kata kata “the devils is in your questions” yang dimana tu adalah hal yang saya pikirkan selama ini tetapi tidak bisa mengungkapkannya bagaimana. Lalu ada juga bahwa kita sebelum mencari solusi dari sebuah permasalahan. Ada step sebelum jump to solution tersebut agar kita tahu alasan mengapa kita mengadakan suatu solusi tersebut berangkat dari pertanyaan apa(dimana asumsi terkait “step sblm jump tos solution ini” masi saya pahami seiring berjalannya waktu)
