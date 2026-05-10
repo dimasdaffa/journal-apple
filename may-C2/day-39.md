@@ -1,4 +1,4 @@
-## # Day 39: Challenge Statement (Day 3 of Challenge 2 - Practice makes perfect)
+## # Day 39: Finalize Research Plan (Day 3 of Challenge 2 - Practice makes perfect)
 **Date:** Wednesday, May 10, 2026
 
 ### # Activities
