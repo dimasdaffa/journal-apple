@@ -1,4 +1,4 @@
-## # Day 33: Challenge Statement (Day 1 of Challenge 2 - Practice makes perfect)
+## # Day 37: Challenge Statement (Day 1 of Challenge 2 - Practice makes perfect)
 **Date:** Monday, May 4, 2026
 
 ### # Activities
