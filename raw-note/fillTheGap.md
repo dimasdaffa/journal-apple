@@ -134,8 +134,7 @@ Dari sudut pandang teknis, FocalGrid menjadi media pembuktian arsitektur antarmu
 
 ### 2.1 Tab Menu 1: "Learn Forge" (Core Learning Flow)
 
-- **FR-LF-01: Dasbor Pembelajaran (Bento Style)**
-  - Menampilkan daftar empat komposisi dasar menggunakan kartu informasi bergaya Bento Grid asimetris.
+- **FR-LF-01: Dasbor Pembelajaran **
   - Setiap kartu wajib memiliki thumbnail visual statis yang mencerminkan bentuk geometris rasio komposisi terkait.
 
 - **FR-LF-02: Modul Teori & Catatan Kurator**
@@ -158,12 +157,30 @@ Dari sudut pandang teknis, FocalGrid menjadi media pembuktian arsitektur antarmu
 
 ### 2.2 Tab Menu 2: "Collector Vault" (User Sandbox & Portfolio)
 
+- **FR-CV-00: Collector Vault Page**
+ - Menampilkan list foto latihan kita grouped by kategori komposisi fotografi menggunakan card bergaya Bento Grid asimetris.
+
 - **FR-CV-01: Manajemen Pengunggahan Foto**
   - Menyediakan fitur impor foto atau jepret langsung dari kamera, lalu menyimpan ke penyimpanan lokal aplikasi.
 
 - **FR-CV-02: Kategorisasi Multi-Dimensi**
   - Menyediakan filter dan pengelompokan foto berdasarkan kategori komposisi.
   - Menyediakan pengelompokan berdasarkan nama fotografer profesional sebagai inspirasi.
+
+### 2.3 Modul Tambahan: "Live Field Camera" 
+
+Modul perangkat keras yang mengubah insting statis pengguna menjadi praktik pengambilan gambar langsung di dunia nyata.
+
+- **FR-LF-06: Viewfinder Kamera Real-Time (AVFoundation)**
+  - Aplikasi harus mampu mengaktifkan kamera belakang perangkat secara langsung di dalam aplikasi tanpa interupsi.
+  - Sistem wajib memproyeksikan `Live Grid Overlay` (sesuai materi komposisi yang sedang dipelajari) secara dinamis di atas jendela bidik.
+
+- **FR-LF-07: Deteksi Kedataran Fisik (CoreMotion Gyroscope)**
+  - Sistem harus membaca sensor giroskop perangkat untuk mendeteksi sudut kemiringan tangan pengguna.
+  - Aplikasi wajib menampilkan indikator level kedataran (`virtual horizon/leveler`) di tengah kamera untuk membantu pengguna menghindari *clipping* sudut miring yang tidak disengaja (kecuali pada materi `Diagonal Lines`).
+
+- **FR-LF-08: Real-World Snap & Haptic**
+  - Ketika kamera mendeteksi perangkat berada pada posisi sudut yang sempurna ($(0^\circ)$ rata air) atau garis pemandu alami sejajar dengan objek, aplikasi harus mengirimkan *Haptic Feedback* berupa ketukan ringan kepada tangan pengguna sebagai panduan fisik.
 
 ## 3. Spesifikasi Teknis Antarmuka & Tata Letak Adaptif
 
@@ -174,7 +191,8 @@ Aplikasi wajib menangani perubahan geometri layar secara dinamis tanpa merusak k
 - **Root Container:** menggunakan `TabView` untuk memisahkan menu "Learn Forge" dan "Collector Vault".
 - **Perilaku iPhone (Compact Width Class):**
   - Navigasi utama menggunakan `NavigationStack` linier.
-  - Dasbor menggunakan Bento Grid 2 kolom asimetris.
+  - Collector Vault menggunakan Bento Grid 2 kolom asimetris. 
+  ![alt text](collector.png)
   - Layar simulasi menempatkan panel kontrol secara vertikal di sepertiga bawah layar.
 - **Perilaku iPad (Regular Width Class):**
   - Navigasi utama berubah menjadi `NavigationSplitView` 2 kolom.
@@ -203,6 +221,13 @@ Aplikasi wajib menangani perubahan geometri layar secara dinamis tanpa merusak k
 - Kartu hero utama dapat ditempatkan di luar grid atau menggunakan sel lebar penuh.
 - Jarak komponen di dalam grid dikunci pada `16pt`.
 
+#### D. Implementasi Integrasi Perangkat Keras & Kondisi Perangkat
+
+- **Lokasi Berkas:** `Views/Simulation/Components/LiveCameraView.swift`
+- **Spesifikasi Perilaku Komponen Berdasarkan Ukuran Layar:**
+  - **Pada iPhone (`Horizontal: Compact`):** `Live Viewfinder` kamera akan mengambil **100% penuh layar penuh (Full Screen Immersive)**. Tombol jepret dan selektor grid diletakkan melayang secara transparan di atas kamera agar mudah dioperasikan satu tangan di lapangan.
+  - **Pada iPad (`Horizontal: Regular`):** `Live Viewfinder` kamera tidak dipaksakan memenuhi layar raksasa iPad. Kamera akan dirender di dalam **Bingkai Jendela Terkontrol (View Window)** berasio 4:3 di sisi kanan layar, sementara sisi kiri menampilkan panduan ringkas petunjuk komposisi, menciptakan asisten pemotretan studio yang elegan.
+
 ### 3.3 Struktur Folder Arsitektur Tampilan
 
 ```text
@@ -226,5 +251,12 @@ FocalGrid/
 
 ### 3.4 Kepresisian Spasial & Aturan Spacing Apple HIG
 
-- Sistem kisi spasial menggunakan aturan grid kelipatan 8.
+- Sistem kisi spasial menggunakan aturan grid kelipatan 4.
 - Grid item spacing pada galeri: `8pt`.
+## 5. Alur Pengguna & Transisi State (Pembaruan Alur Kamera)
+
+| **State Awal** | **Aksi Pengguna** | **Transisi / Efek UI** | **State Akhir** |
+|---|---|---|---|
+| **Layar Detail Teori / Simulator** | Mengetuk ikon "Kamera Live" di pojok kanan atas Toolbar | Layar membuka jendela kamera. Sistem meminta izin akses `Camera Privacy Permission` jika pertama kali | `Live Field Camera Screen` aktif |
+| **Live Kamera Aktif (iPhone)** | Mengubah orientasi iPhone dari Portrait ke Landscape | `AnyLayout` mendeteksi rotasi fisik. Tombol shutter otomatis bergeser mulus dari bawah layar ke sisi kanan jempol pengguna tanpa memutus aliran video kamera | Kamera menyesuaikan orientasi landscape penuh |
+| **Membidik Objek Nyata** | Menyelaraskan garis bangunan nyata dengan grid `Leading Lines` di layar | Sensor giroskop membaca kedataran. Sistem memicu ketukan motor getar internal | Objek terkunci rapi. Pengguna menekan tombol jepret, foto tersimpan otomatis ke `Collector Vault` dalam kategori folder yang bersangkutan |
