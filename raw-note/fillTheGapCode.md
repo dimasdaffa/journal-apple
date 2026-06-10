@@ -1,8 +1,6 @@
 # Roadmap Belajar
 
-Berikut adalah daftar materi (learning path) yang akan kita pelajari hari demi hari, dibagi menjadi 4 sesi utama sebelum melangkah ke pembahasan proyek.
-
-# Challenge Statement
+## Challenge Statement
 Fill my knowledge/skill gap in adaptive user interface design when coding an app
 
 ## Sesi 1: Fondasi Adaptivitas & Size Classes
