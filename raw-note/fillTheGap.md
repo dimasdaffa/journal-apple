@@ -2,6 +2,9 @@
 
 Berikut adalah daftar materi (learning path) yang akan kita pelajari hari demi hari, dibagi menjadi 4 sesi utama sebelum melangkah ke pembahasan proyek.
 
+# Challenge Statement
+Fill my knowledge/skill gap in adaptive user interface design when coding an app
+
 ## Sesi 1: Fondasi Adaptivitas & Size Classes
 Fokus: Memahami bagaimana iOS mengenali ukuran layar dan bagaimana SwiftUI mengubah susunan layout secara dinamis.
 
